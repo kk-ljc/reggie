@@ -13,6 +13,7 @@ public class RedisConfig {
         RedisTemplate<Object,Object> redisTemplate=new RedisTemplate<>();
         //默认的Key序列化器为JdkSerializationRedisSerializer
         redisTemplate.setKeySerializer(new StringRedisSerializer());
+        redisTemplate.setConnectionFactory(connectionFactory);
         return redisTemplate;
     }
 }
