@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.itheima.reggie.ReggieTakeOutApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.824 s - in com.itheima.reggie.ReggieTakeOutApplicationTests
