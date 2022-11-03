@@ -15,6 +15,9 @@ spring:
     port: 6379
     database: 0
     #    password: 123456
+  cache:
+    redis:
+      time-to-live: 1800000 #设置缓存过期时间 ms
     jedis:
       #redis连接池配置
       pool:
