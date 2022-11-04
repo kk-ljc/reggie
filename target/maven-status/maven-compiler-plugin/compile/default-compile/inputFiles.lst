@@ -39,6 +39,7 @@ D:\workspace\reggie\src\main\java\com\itheima\reggie\service\impl\OrderServiceIm
 D:\workspace\reggie\src\main\java\com\itheima\reggie\service\impl\SetmealDishServiceImpl.java
 D:\workspace\reggie\src\main\java\com\itheima\reggie\common\JacksonObjectMapper.java
 D:\workspace\reggie\src\main\java\com\itheima\reggie\mapper\CategoryMapper.java
+D:\workspace\reggie\src\main\java\com\itheima\reggie\config\RedisConfig.java
 D:\workspace\reggie\src\main\java\com\itheima\reggie\entity\AddressBook.java
 D:\workspace\reggie\src\main\java\com\itheima\reggie\entity\User.java
 D:\workspace\reggie\src\main\java\com\itheima\reggie\entity\Orders.java
