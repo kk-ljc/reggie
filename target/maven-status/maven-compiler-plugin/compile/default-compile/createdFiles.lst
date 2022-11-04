@@ -41,6 +41,7 @@ com\itheima\reggie\service\impl\DishFlavorServiceImpl.class
 com\itheima\reggie\common\R.class
 com\itheima\reggie\controller\DishController.class
 com\itheima\reggie\mapper\OrderDetailMapper.class
+com\itheima\reggie\config\RedisConfig.class
 com\itheima\reggie\controller\EmployeeController.class
 com\itheima\reggie\mapper\SetmealMapper.class
 com\itheima\reggie\service\CategoryService.class
