@@ -77,6 +77,7 @@ public class ShoppingCartController {
         queryWrapper.orderByAsc(ShoppingCart::getCreateTime);
 
         List<ShoppingCart> list = shoppingCartService.list(queryWrapper);
+
         //遍历数据集合,将number为0的数据移除
         for (ShoppingCart shoppingCart : list) {
             if (shoppingCart.getNumber()==0){

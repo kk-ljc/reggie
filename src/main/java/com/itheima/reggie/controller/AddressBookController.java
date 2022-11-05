@@ -8,9 +8,11 @@ import com.itheima.reggie.entity.AddressBook;
 import com.itheima.reggie.service.AddressBookService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * 地址簿管理
@@ -99,5 +101,33 @@ public class AddressBookController {
 
         //SQL:select * from address_book where user_id = ? order by update_time desc
         return R.success(addressBookService.list(queryWrapper));
+    }
+
+    /**
+     * 修改地址
+     */
+    @PutMapping
+    public R<String> update(@RequestBody AddressBook addressBook) {
+        log.info("addressBook:{}", addressBook);
+
+        addressBookService.updateById(addressBook);
+
+        return R.success("修改成功");
+
+    }
+
+    /**
+     * 删除地址
+     * @param ids
+     * @return
+     */
+    @DeleteMapping
+//    @CacheEvict(value = "AddressBookCache",allEntries = true)
+    public R<String> delete(@RequestParam Long ids) {
+        log.info("删除菜品id为 {}", ids);
+        addressBookService.removeById(ids);
+
+
+        return R.success("套餐数据删除成功");
     }
 }
