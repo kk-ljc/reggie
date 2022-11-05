@@ -113,7 +113,9 @@
                 mounted(){},
                 methods:{
                     goBack(){
-                        history.go(-1)
+                        // history.go(-1) //会导致页面跳转时不刷新
+                        window.location.replace('/front/page/add-order.html')
+                        // location.reload(); //本地刷新
                     },
                     toAddressEditPage(item){
                         window.requestAnimationFrame(()=>{
@@ -148,7 +150,9 @@
                         //表示是从订单页面跳转过来的
                         if(url.includes('order')){
                             this.setDefaultAddress(item)
-                            history.go(-1)
+                            // history.go(-1)  //会导致页面跳转时不刷新
+                            window.location.replace('/front/page/add-order.html')
+
                         }
                     }
 
