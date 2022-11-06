@@ -24,7 +24,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Orders> implement
     private ShoppingCartService shoppingCartService;
 
     @Autowired
-    private UserService userServicel;
+    private UserService userService;
 
     @Autowired
     private AddressBookService addressBookService;
@@ -52,7 +52,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Orders> implement
         }
 
         //查询用户数据
-        User user = userServicel.getById(currenId);
+        User user = userService.getById(currenId);
 
         //查询地址数据
         Long addressBookId = orders.getAddressBookId();
